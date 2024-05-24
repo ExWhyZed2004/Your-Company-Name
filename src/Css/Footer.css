@@ -1,0 +1,82 @@
+.footermain {
+  background-color: rgb(27,27,54);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.lihead {
+  color: white;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.phonecon {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.num {
+  margin-left: 10px; /* Ensure some space between icon and text */
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.loc {
+  margin-left: 10px; /* Ensure some space between icon and text */
+}
+
+.footerend {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.icons {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.descfe {
+  text-align: center;
+  flex: 1; /* Allow the description to take available space */
+}
+
+@media (max-width: 768px) {
+  .footermain {
+    padding: 1rem;
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .phonecon, .location {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerend {
+    padding: 1rem;
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .icons {
+    gap: 1rem;
+    justify-content: center;
+    padding: 0.5rem;
+  }
+
+  .descfe {
+    margin-left: 0; /* Center the description text */
+  }
+}

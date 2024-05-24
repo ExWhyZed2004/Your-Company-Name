@@ -1,0 +1,132 @@
+/* Base styles */
+.leader-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+  padding: 0 8rem;
+}
+
+.heading {
+  font-size: 3rem;
+  color: rgb(215, 62, 15);
+  text-align: center;
+}
+
+.leader-p {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.card-container {
+  width: 100%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 20px; /* Space between the cards */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.card-container .image {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.card-container .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.desc {
+  text-align: center;
+}
+
+.test {
+  height: 7rem;
+  background-color: rgb(12, 12, 44);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.numbers {
+  text-align: center;
+  color: rgb(156, 42, 11);
+}
+
+.xyz {
+  color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .leader-head {
+    margin: 2rem;
+    padding: 0 4rem;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .leader-p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .leader-head {
+    margin: 1.5rem;
+    padding: 0 2rem;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .leader-p {
+    font-size: 1.1rem;
+  }
+  .card {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leader-head {
+    margin: 1rem;
+    padding: 0 1rem;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .leader-p {
+    font-size: 1rem;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+  }
+  .test {
+    height: 5rem;
+    flex-direction: column;
+  }
+}
